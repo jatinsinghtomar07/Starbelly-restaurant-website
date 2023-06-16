@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>val form</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <style>
+    .val{
+        background-image: url(https://images.unsplash.com/photo-1498522271744-cdd435c13f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80);
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        border-radius: 30px;
+        margin: 40px;
+        padding:10px 20px 10px 20px ;
+    }
+  </style>
+  <body>
+<!-- validation form Code start -->
+    
+<div class="val">
+  <h2>Feedback Form</h2>
+
+  <div class="feed">
+    <p class="small2">About Us </p>
+    <h2>We've been making healthy food last for 10 years</h2>
+    <p >
+     
+We provide only vegeterian healthy food in our restaurant.<br>
+Healthy food refers to foods that contain beneficial nutrients.<br> These nutrients commonly include carbohydrates, protein, fat, minerals, vitamins, and water.<br> Healthy food produces energy for our body and runs all the functions of the body smoothly.<br> It also keeps our immune system healthy.
+    </p>
+  </div>
+  <form class="row g-3 needs-validation was-validated" novalidate="">
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="" placeholder="First name" required="">
+      <div class="invalid-feedback">
+        Please enter your first name.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Last name" required="">
+      <div class="invalid-feedback">
+        Please enter your last name.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Email</label>
+      <div class="input-group has-validation">
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Email" required="">
+        <div class="invalid-feedback">
+          Please enter your email.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="">
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" id="validationCustom04" required="">
+        <option selected="" disabled="" value="">Choose...</option>
+        <option> Andhra Pradesh</option>
+        <option> Arunachal Pradesh</option>
+        <option> Assam</option>
+        <option>Bihar </option>
+        <option> Chhattisgarh</option>
+        <option> Goa</option>
+        <option> Gujarat</option>
+        <option> Haryana  </option>
+        <option> Himachal Pradesh</option>
+        <option>Jammu and Kashmir </option>
+        <option> Jharkhand</option>
+        <option>Karnataka </option>
+        <option> Kerala </option>
+        <option>Madhya Pradesh </option>
+        <option>Maharashtra </option>
+        <option> Manipur</option>
+        <option>Meghalaya </option>
+        <option> Mizoram</option>
+        <option> Nagaland</option>
+        <option> Odisha</option>
+        <option> Punjab</option>
+        <option>Rajasthan </option>
+        <option> Sikkim</option>
+        <option> Tamil Nadu</option>
+        <option>Telangana </option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh </option>
+        <option> Uttarakhand</option>
+        <option>West Bengal </option>
+       
+
+
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="zip code" required="">
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+     <label for="validationCustom02" class="form-label">Message</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Write your message..." required="">
+      <div class="invalid-feedback">
+        Please write something.
+      </div>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <a href="file:///Users/jatin/Desktop/htmls/Website/submit.html" class="btn btn-primary">Submit form</a>
+    </div>
+  </form>
+</div>
+  
+  <!-- End Code -->
+  </body>
+</html>
